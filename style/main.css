@@ -1,0 +1,119 @@
+:root {
+    --netflix-red: #E50914;
+    --netflix-black: #141414;
+    --roboto: font-family: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basis elements */
+body {
+    background: var(--netflix-black);
+    font-family: 'Bebas Neue', cursive;
+    color: #fff;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    margin: 10px;
+    color: var(--netflix-red);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 55px;
+    text-decoration: none;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/* Main movie */
+.main-movie {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50) 100%), url('../img/capa.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.movie-description {
+    font-size: 20px;   
+}
+
+.main-movie .movie-description {
+    margin-top: 16px;
+    margin-bottom: 42px;
+
+}
+
+.movie-title {
+    margin-top: 15%;
+    font-size: 68px;
+}
+
+.button {
+    background-color: rgba(0, 0, 0, .60);
+    border: none;
+    color: #fff;
+
+    padding: 15px 30px;
+    margin-left: 20px;
+    margin-right: 15px;
+
+    font-size: 12px;
+
+    cursor: pointer;
+
+    transition: .4s ease all;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: var(--netflix-black);
+
+}
+
+.button i {
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.main-movie .container {
+    width: 50%;
+}
+
+.box-movie {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.carousel-movies {
+    margin-top: 5px;
+}
